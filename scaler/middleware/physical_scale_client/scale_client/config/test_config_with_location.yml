@@ -1,0 +1,19 @@
+# This configuration spins up a client with dummy sensors
+# Ideal for testing on a laptop :)
+# Also great for testing the feature for including other config files!
+
+Main:
+    include_config_files: ["test_config.yml"]
+
+Applications:
+    Test:
+      # We include this again in order to verify that the sub-config file system is working properly:
+      # the subscriptions should be merged with the others!
+      class: "test_application.TestApplication"
+      subscriptions: ["gas"]
+    LocationManager:
+        class: "location_manager.LocationManager"
+
+Sensors:
+    GeoIPSensor:
+        class: "location.geo_ip_sensor.GeoIpSensor"

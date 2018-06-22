@@ -1,0 +1,35 @@
+# This configuration spins up a client with dummy sensors and publishes via MQTT
+# Ideal for testing on a laptop :)
+# You can use this to run demos.  Note that at the time of this edit it features ALL
+# of the dummy sensors we've created!
+
+Main:
+    #include_config_files: ["test_config_with_location.yml", "mqtt_config.yml"]
+    include_config_files: ["test_config.yml", "mqtt_config.yml"]
+
+# Here we just add in the dummy sensors that test_config did not already...
+Sensors:
+    
+    # Dummy environment
+    #DummyLightSensor:
+    #  class: "dummy.dummy_light_physical_sensor.DummyLightPhysicalSensor"
+    #  device: "light0"
+    # Dummy presence_sensors
+    #DummyPIRSensor:
+    #  class: "dummy.dummy_pir_physical_sensor.DummyPirPhysicalSensor"
+    #  device: "pir0"
+    # VirtualSensors that detect higher-level events: should work with dummy ones
+    #PIRNoMotionSensor:
+    #  class: "event_detectors.no_motion_virtual_sensor.NoMotionVirtualSensor"
+    #LightFlashSensor:
+    #  class: "event_detectors.light_flash_virtual_sensor.LightFlashVirtualSensor"
+    #TempHighSensor:
+    #  class: "event_detectors.temperature_high_virtual_sensor.TemperatureHighVirtualSensor"
+    myTemperatureSensor:
+      class: "environment.myTemperatureSensor.myTemperatureSensor"
+    #TemperaturePhysicalSensor:
+    #  class: "environment.temperature_physical_sensor.TemperaturePhysicalSensor"
+   # TempSensor:
+    #  class: "environment.myTemperatureSensor.DummyTemperaturePhysicalSensor"
+      #device: "cel0"
+      #gpio_pin: 17

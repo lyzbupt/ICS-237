@@ -1,0 +1,77 @@
+# This config file contains all of the sensors we've implemented and run on the Raspberry Pi SCALE client platform
+
+Main:
+    # Here we include our default MqttEventSink configuration for uploading events to an MQTT broker
+    include_config_files: ["mqtt_config.yml"]
+
+EventSinks:
+    # Store events in a local MySQL database
+    MySQLDatabase:
+      class: "mysql_event_sink.MySQLEventSink"
+      dbname: "scale_client"
+      username: "scale_usr"
+      password: "123456"
+    # Currently not in use due to a lack of Sigfox ultra-narrowband towers near UCI,
+    # this publishes events encoded into very small messages using the
+    # USB-connected Sigfox adapter.  Sigfox will then send it back to our server through
+    # an HTTP call, at which point we have to convert the events back to our canonical format.
+    #SigfoxPublisher:
+    #  class: "sigfox_event_sink.SigfoxEventSink"
+    #  serialport: "/dev/ttyUSB0"
+
+Applications:
+    # Collects location information from other sources and publishes changes so that other
+    # applications can tag their events with location data
+    LocationManager:
+      class: "location_manager.LocationManager"
+    # Works in concert with the MySQLEventSink to record events and clean them up
+    MySQLDatabase:
+      class: "mysql_maintainer.MySQLMaintainer"
+      dbname: "scale_client"
+      username: "scale_usr"
+      password: "123456"
+
+Sensors:
+    ### Physical environment sensors
+    LightSensor:
+      class: "environment.light_physical_sensor.LightPhysicalSensor"
+      device: "light0"
+      analog_port: 3
+    GasSensor:
+      class: "environment.gas_physical_sensor.GasPhysicalSensor"
+      device: "gas0"
+      analog_port: 0
+    # Passive infrared detects movement of living beings
+    PIRSensor:
+      class: "environment.pir_physical_sensor.PirPhysicalSensor"
+      device: "pir0"
+      gpio_pin: 17
+    TemperatureSensor:
+      class: "environment.temperature_physical_sensor.TemperaturePhysicalSensor"
+      device: "cel0"
+    # The CSN sensor detects possible local seismic activity.  You can bump the table to set it off,
+    # but continuing to do so will convince it that this is now a normal level of shaking in the environment :)
+    CSNSensor:
+      class: "community_seismic_network.csn_sensor.CsnSensor"
+    ### These virtual sensors consume physical environmental SensedEvents and
+    # produce higher-level events they detected from analyzing that data
+    PIRNoMotionSensor:
+      class: "event_detectors.no_motion_virtual_sensor.NoMotionVirtualSensor"
+    LightFlashSensor:
+      class: "event_detectors.light_flash_virtual_sensor.LightFlashVirtualSensor"
+    TemperatureHighSensor:
+      class: "event_detectors.temperature_high_virtual_sensor.TemperatureHighVirtualSensor"
+    UnexpectedMotionSensor:
+      class: "event_detectors.unexpected_motion_virtual_sensor.UnexpectedMotionVirtualSensor"
+    ### Network sensors
+    # A simple heartbeat to verify this client is alive
+    HBSensor:
+      class: "dummy.heartbeat_sensor.HeartbeatSensor"
+      interval: 60
+    # Ensure we have Internet access and allow the rest of the system to adapt accordingly if we don't!
+    InternetAccessSensor:
+      class: "network.internet_access_sensor.InternetAccessSensor"
+    ### Location sensor
+    # Estimate our location using our IP address since we don't have GPS
+    GeoIPSensor:
+      class: "location.geo_ip_sensor.GeoIpSensor"

@@ -1,0 +1,424 @@
+Received CONNACK (0, 0)
+Connected with result code 0
+Received SUBACK
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/801f02ee4e95/evt/light/json', ...  (258 bytes)
+b'{"d": {"timestamp": 1528946968.804435, "value": 60, "prio_value": 9, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "light", "condition": {"interval": 10}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946968
+light
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/b827eb496e3c/evt/light/json', ...  (255 bytes)
+b'{"d": {"timestamp": 1528946969.2188, "value": 8, "prio_value": 9, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "light", "condition": {"interval": 10}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946969
+light
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/801f02ee61cf/evt/gas/json', ...  (257 bytes)
+b'{"d": {"timestamp": 1528946969.233148, "value": 120, "prio_value": 9, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "gas", "condition": {"interval": 10}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946969
+gas
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/b827eb54155c/evt/gas_ref/json', ...  (259 bytes)
+b'{"d": {"timestamp": 1528946969.28466, "value": 90, "prio_value": 9, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "gas_ref", "condition": {"interval": 10}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946969
+gas_ref
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/801f02ee4e95/evt/temperature/json', ...  (303 bytes)
+b'{"d": {"timestamp": 1528946969.319914, "value": 22.69, "prio_value": 5, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "temperature", "condition": {"threshold": {"operator": ">", "value": -274.0}}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946969
+temperature
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/000c2958a801/evt/current_condition/json', ...  (284 bytes)
+b'{"d": {"timestamp": 1528946969.486598, "value": "Partly Cloudy", "prio_value": 10, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "current_condition", "condition": {"interval": 10}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946969
+current_condition
+wrong msg format
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/000c2958a801/evt/temperature/json', ...  (301 bytes)
+b'{"d": {"timestamp": 1528946969.490704, "value": 25.07, "prio_value": 5, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "temperature", "condition": {"threshold": {"operator": ">", "value": 24.0}}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946969
+temperature
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/000c2958a801/evt/temperature/json', ...  (425 bytes)
+b'{"d": {"timestamp": 1528946969.490704, "misc": {"touched_by_test_app": true}, "value": 26.07, "prio_value": 5, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "temperature", "condition": {"event": "SensedEvent (value=25.07, type=temperature, src=scale-local:/scale/sensors/DummyTempSensor, prio=5, time=1528946969.49)"}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946969
+temperature
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/b827eb54155c/evt/pollution_air_tgs2600/json', ...  (273 bytes)
+b'{"d": {"timestamp": 1528946969.908787, "value": 0, "prio_value": 9, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "pollution_air_tgs2600", "condition": {"interval": 10}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946969
+pollution_air_tgs2600
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/000c2958a801/evt/hyx/json', ...  (267 bytes)
+b'{"d": {"timestamp": 1528946970.436754, "value": "heartbeat", "prio_value": 5, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "hyx", "condition": {"interval": 5}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946970
+hyx
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/000c2958a801/evt/condition/json', ...  (301 bytes)
+b'{"d": {"timestamp": 1528946970.800769, "value": "1:cloud,2:sunny,3:sunny,4:sunny,8:rain,", "prio_value": 10, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "condition", "condition": {"interval": 5}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946970
+condition
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/000c2958a801/evt/seismic/json', ...  (323 bytes)
+b'{"d": {"timestamp": 1528946970.803622, "value": [0.09698322416935877, 0.005430790958384325, 0.0], "prio_value": 4, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "seismic", "condition": {"interval": 8.40068214619636}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946970
+seismic
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/b827eb54155c/evt/light/json', ...  (257 bytes)
+b'{"d": {"timestamp": 1528946972.064148, "value": 2, "prio_value": 9, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "light", "condition": {"interval": 10}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946972
+light
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/000c2958a801/evt/pressure/json', ...  (265 bytes)
+b'{"d": {"timestamp": 1528946972.428991, "value": 29.79, "prio_value": 10, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "pressure", "condition": {"interval": 10}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946972
+pressure
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/000c2958a801/evt/temperature/json', ...  (301 bytes)
+b'{"d": {"timestamp": 1528946972.804203, "value": 27.14, "prio_value": 5, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "temperature", "condition": {"threshold": {"operator": ">", "value": 24.0}}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946972
+temperature
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/000c2958a801/evt/temperature/json', ...  (424 bytes)
+b'{"d": {"timestamp": 1528946972.804203, "misc": {"touched_by_test_app": true}, "value": 28.14, "prio_value": 5, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "temperature", "condition": {"event": "SensedEvent (value=27.14, type=temperature, src=scale-local:/scale/sensors/DummyTempSensor, prio=5, time=1528946972.8)"}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946972
+temperature
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/000c2958a801/evt/temperature_high/json', ...  (306 bytes)
+b'{"d": {"timestamp": 1528946972.807681, "value": 28.14, "prio_value": 4, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "temperature_high", "condition": {"threshold": {"operator": ">", "value": 28.0}}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946972
+temperature_high
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/801f02ee61cf/evt/temperature_high/json', ...  (306 bytes)
+b'{"d": {"timestamp": 1528946972.855983, "value": 28.14, "prio_value": 4, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "temperature_high", "condition": {"threshold": {"operator": ">", "value": 28.0}}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946972
+temperature_high
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/b827eb496e3c/evt/pollution_air_tgs2600/json', ...  (274 bytes)
+b'{"d": {"timestamp": 1528946972.875596, "value": 50, "prio_value": 9, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "pollution_air_tgs2600", "condition": {"interval": 10}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946972
+pollution_air_tgs2600
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/801f02ee4e95/evt/temperature_high/json', ...  (306 bytes)
+b'{"d": {"timestamp": 1528946972.821853, "value": 28.14, "prio_value": 4, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "temperature_high", "condition": {"threshold": {"operator": ">", "value": 28.0}}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946972
+temperature_high
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/b827eb54155c/evt/pollution_air_mq9_ref/json', ...  (275 bytes)
+b'{"d": {"timestamp": 1528946972.996014, "value": 360, "prio_value": 9, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "pollution_air_mq9_ref", "condition": {"interval": 10}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946972
+pollution_air_mq9_ref
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/b827eb54155c/evt/pollution_air_mq9/json', ...  (269 bytes)
+b'{"d": {"timestamp": 1528946974.528251, "value": 0, "prio_value": 9, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "pollution_air_mq9", "condition": {"interval": 10}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946974
+pollution_air_mq9
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/b827eb54155c/evt/gas/json', ...  (255 bytes)
+b'{"d": {"timestamp": 1528946974.656494, "value": 0, "prio_value": 9, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "gas", "condition": {"interval": 10}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946974
+gas
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/b827eb54155c/evt/pollution_air_tgs2600_ref/json', ...  (277 bytes)
+b'{"d": {"timestamp": 1528946974.81851, "value": 69, "prio_value": 9, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "pollution_air_tgs2600_ref", "condition": {"interval": 10}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946974
+pollution_air_tgs2600_ref
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/b827eb810ac5/evt/pollution_air_mq9/json', ...  (271 bytes)
+b'{"d": {"timestamp": 1528946974.856072, "value": 779, "prio_value": 9, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "pollution_air_mq9", "condition": {"interval": 10}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946974
+pollution_air_mq9
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/b827eb810ac5/evt/gas/json', ...  (256 bytes)
+b'{"d": {"timestamp": 1528946974.941848, "value": 25, "prio_value": 9, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "gas", "condition": {"interval": 10}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946974
+gas
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/801f02ee61cf/evt/light/json', ...  (259 bytes)
+b'{"d": {"timestamp": 1528946975.137237, "value": 139, "prio_value": 9, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "light", "condition": {"interval": 10}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946975
+light
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/b827eb810ac5/evt/pollution_air_mq135/json', ...  (272 bytes)
+b'{"d": {"timestamp": 1528946975.177436, "value": 44, "prio_value": 9, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "pollution_air_mq135", "condition": {"interval": 10}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946975
+pollution_air_mq135
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/b827eb54155c/evt/light_ref/json', ...  (263 bytes)
+b'{"d": {"timestamp": 1528946975.184643, "value": 637, "prio_value": 9, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "light_ref", "condition": {"interval": 10}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946975
+light_ref
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/000c2958a801/evt/hyx/json', ...  (267 bytes)
+b'{"d": {"timestamp": 1528946975.438685, "value": "heartbeat", "prio_value": 5, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "hyx", "condition": {"interval": 5}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946975
+hyx
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/000c2958a801/evt/condition/json', ...  (301 bytes)
+b'{"d": {"timestamp": 1528946975.806785, "value": "1:cloud,2:sunny,3:sunny,4:sunny,8:rain,", "prio_value": 10, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "condition", "condition": {"interval": 5}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946975
+condition
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/b827eb496e3c/evt/heartbeat/json', ...  (272 bytes)
+b'{"d": {"timestamp": 1528946975.885522, "value": "heartbeat", "prio_value": 10, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "heartbeat", "condition": {"interval": 60}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946975
+heartbeat
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/801f02ee61cf/evt/temperature/json', ...  (303 bytes)
+b'{"d": {"timestamp": 1528946976.186619, "value": 23.31, "prio_value": 5, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "temperature", "condition": {"threshold": {"operator": ">", "value": -274.0}}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946976
+temperature
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/000c2958a801/evt/temperature/json', ...  (301 bytes)
+b'{"d": {"timestamp": 1528946977.810543, "value": 27.46, "prio_value": 5, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "temperature", "condition": {"threshold": {"operator": ">", "value": 24.0}}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946977
+temperature
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/000c2958a801/evt/temperature/json', ...  (425 bytes)
+b'{"d": {"timestamp": 1528946977.810543, "misc": {"touched_by_test_app": true}, "value": 28.46, "prio_value": 5, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "temperature", "condition": {"event": "SensedEvent (value=27.46, type=temperature, src=scale-local:/scale/sensors/DummyTempSensor, prio=5, time=1528946977.81)"}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946977
+temperature
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/000c2958a801/evt/temperature_high/json', ...  (306 bytes)
+b'{"d": {"timestamp": 1528946977.814054, "value": 28.46, "prio_value": 4, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "temperature_high", "condition": {"threshold": {"operator": ">", "value": 28.0}}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946977
+temperature_high
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/801f02ee61cf/evt/temperature_high/json', ...  (306 bytes)
+b'{"d": {"timestamp": 1528946977.859221, "value": 28.46, "prio_value": 4, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "temperature_high", "condition": {"threshold": {"operator": ">", "value": 28.0}}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946977
+temperature_high
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/801f02ee4e95/evt/temperature_high/json', ...  (306 bytes)
+b'{"d": {"timestamp": 1528946977.842665, "value": 28.46, "prio_value": 4, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "temperature_high", "condition": {"threshold": {"operator": ">", "value": 28.0}}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946977
+temperature_high
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/801f02ee4e95/evt/gas/json', ...  (257 bytes)
+b'{"d": {"timestamp": 1528946978.370102, "value": 380, "prio_value": 9, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "gas", "condition": {"interval": 10}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946978
+gas
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/801f02ee4e95/evt/light/json', ...  (257 bytes)
+b'{"d": {"timestamp": 1528946978.81308, "value": 60, "prio_value": 9, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "light", "condition": {"interval": 10}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946978
+light
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/b827eb496e3c/evt/light/json', ...  (257 bytes)
+b'{"d": {"timestamp": 1528946979.220457, "value": 8, "prio_value": 9, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "light", "condition": {"interval": 10}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946979
+light
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/801f02ee61cf/evt/gas/json', ...  (257 bytes)
+b'{"d": {"timestamp": 1528946979.231309, "value": 120, "prio_value": 9, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "gas", "condition": {"interval": 10}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946979
+gas
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/000c2958a801/evt/current_condition/json', ...  (283 bytes)
+b'{"d": {"timestamp": 1528946979.21749, "value": "Partly Cloudy", "prio_value": 10, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "current_condition", "condition": {"interval": 10}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946979
+current_condition
+wrong msg format
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/000c2958a801/evt/seismic/json', ...  (307 bytes)
+b'{"d": {"timestamp": 1528946979.219551, "value": [0.0, 0.0, 0.09767008682642637], "prio_value": 4, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "seismic", "condition": {"interval": 18.80700827779286}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946979
+seismic
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/000c2958a801/evt/temperature/json', ...  (301 bytes)
+b'{"d": {"timestamp": 1528946979.219804, "value": 26.06, "prio_value": 5, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "temperature", "condition": {"threshold": {"operator": ">", "value": 24.0}}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946979
+temperature
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/000c2958a801/evt/temperature/json', ...  (425 bytes)
+b'{"d": {"timestamp": 1528946979.219804, "misc": {"touched_by_test_app": true}, "value": 27.06, "prio_value": 5, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "temperature", "condition": {"event": "SensedEvent (value=26.06, type=temperature, src=scale-local:/scale/sensors/DummyTempSensor, prio=5, time=1528946979.22)"}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946979
+temperature
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/b827eb54155c/evt/gas_ref/json', ...  (260 bytes)
+b'{"d": {"timestamp": 1528946979.286904, "value": 90, "prio_value": 9, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "gas_ref", "condition": {"interval": 10}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946979
+gas_ref
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/801f02ee4e95/evt/temperature/json', ...  (303 bytes)
+b'{"d": {"timestamp": 1528946979.351958, "value": 22.69, "prio_value": 5, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "temperature", "condition": {"threshold": {"operator": ">", "value": -274.0}}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946979
+temperature
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/b827eb54155c/evt/pollution_air_tgs2600/json', ...  (273 bytes)
+b'{"d": {"timestamp": 1528946979.911065, "value": 0, "prio_value": 9, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "pollution_air_tgs2600", "condition": {"interval": 10}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946979
+pollution_air_tgs2600
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/000c2958a801/evt/hyx/json', ...  (267 bytes)
+b'{"d": {"timestamp": 1528946980.442543, "value": "heartbeat", "prio_value": 5, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "hyx", "condition": {"interval": 5}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946980
+hyx
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/000c2958a801/evt/condition/json', ...  (301 bytes)
+b'{"d": {"timestamp": 1528946980.879751, "value": "1:cloud,2:sunny,3:sunny,4:sunny,8:rain,", "prio_value": 10, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "condition", "condition": {"interval": 5}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946980
+condition
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/b827eb54155c/evt/light/json', ...  (257 bytes)
+b'{"d": {"timestamp": 1528946982.066338, "value": 3, "prio_value": 9, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "light", "condition": {"interval": 10}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946982
+light
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/000c2958a801/evt/pressure/json', ...  (265 bytes)
+b'{"d": {"timestamp": 1528946982.489167, "value": 29.79, "prio_value": 10, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "pressure", "condition": {"interval": 10}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946982
+pressure
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/b827eb496e3c/evt/pollution_air_tgs2600/json', ...  (274 bytes)
+b'{"d": {"timestamp": 1528946982.877217, "value": 50, "prio_value": 9, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "pollution_air_tgs2600", "condition": {"interval": 10}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946982
+pollution_air_tgs2600
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/b827eb54155c/evt/pollution_air_mq9_ref/json', ...  (275 bytes)
+b'{"d": {"timestamp": 1528946982.998529, "value": 358, "prio_value": 9, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "pollution_air_mq9_ref", "condition": {"interval": 10}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946982
+pollution_air_mq9_ref
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/000c2958a801/evt/temperature/json', ...  (301 bytes)
+b'{"d": {"timestamp": 1528946983.491238, "value": 29.28, "prio_value": 5, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "temperature", "condition": {"threshold": {"operator": ">", "value": 24.0}}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946983
+temperature
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/000c2958a801/evt/temperature_high/json', ...  (306 bytes)
+b'{"d": {"timestamp": 1528946983.491663, "value": 29.28, "prio_value": 4, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "temperature_high", "condition": {"threshold": {"operator": ">", "value": 28.0}}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946983
+temperature_high
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/000c2958a801/evt/temperature/json', ...  (425 bytes)
+b'{"d": {"timestamp": 1528946983.491238, "misc": {"touched_by_test_app": true}, "value": 30.28, "prio_value": 5, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "temperature", "condition": {"event": "SensedEvent (value=29.28, type=temperature, src=scale-local:/scale/sensors/DummyTempSensor, prio=5, time=1528946983.49)"}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946983
+temperature
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/000c2958a801/evt/temperature_high/json', ...  (306 bytes)
+b'{"d": {"timestamp": 1528946983.494504, "value": 30.28, "prio_value": 4, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "temperature_high", "condition": {"threshold": {"operator": ">", "value": 28.0}}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946983
+temperature_high
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/801f02ee61cf/evt/temperature_high/json', ...  (306 bytes)
+b'{"d": {"timestamp": 1528946983.548413, "value": 29.28, "prio_value": 4, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "temperature_high", "condition": {"threshold": {"operator": ">", "value": 28.0}}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946983
+temperature_high
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/801f02ee61cf/evt/temperature_high/json', ...  (306 bytes)
+b'{"d": {"timestamp": 1528946983.550157, "value": 30.28, "prio_value": 4, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "temperature_high", "condition": {"threshold": {"operator": ">", "value": 28.0}}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946983
+temperature_high
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/801f02ee4e95/evt/temperature_high/json', ...  (306 bytes)
+^Fb'{"d": {"timestamp": 1528946983.491013, "value": 29.28, "prio_value": 4, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "temperature_high", "condition": {"threshold": {"operator": ">", "value": 28.0}}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946983
+temperature_high
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/801f02ee4e95/evt/temperature_high/json', ...  (306 bytes)
+b'{"d": {"timestamp": 1528946983.554039, "value": 30.28, "prio_value": 4, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "temperature_high", "condition": {"threshold": {"operator": ">", "value": 28.0}}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946983
+temperature_high
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/b827eb54155c/evt/geo_ip/json', ...  (341 bytes)
+b'{"d": {"timestamp": 1528946984.167226, "value": {"lat": 33.6403, "ip": "128.195.53.177", "lon": -117.7694, "exp": 1528947584.166588}, "prio_value": 9, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "geo_ip", "condition": {"interval": 60}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946984
+geo_ip
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/000c2958a801/evt/temperature/json', ...  (301 bytes)
+b'{"d": {"timestamp": 1528946984.493194, "value": 27.68, "prio_value": 5, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "temperature", "condition": {"threshold": {"operator": ">", "value": 24.0}}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946984
+temperature
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/000c2958a801/evt/temperature/json', ...  (425 bytes)
+b'{"d": {"timestamp": 1528946984.493194, "misc": {"touched_by_test_app": true}, "value": 28.68, "prio_value": 5, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "temperature", "condition": {"event": "SensedEvent (value=27.68, type=temperature, src=scale-local:/scale/sensors/DummyTempSensor, prio=5, time=1528946984.49)"}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946984
+temperature
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/000c2958a801/evt/temperature_high/json', ...  (306 bytes)
+b'{"d": {"timestamp": 1528946984.497982, "value": 28.68, "prio_value": 4, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "temperature_high", "condition": {"threshold": {"operator": ">", "value": 28.0}}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946984
+temperature_high
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/b827eb54155c/evt/pollution_air_mq9/json', ...  (269 bytes)
+b'{"d": {"timestamp": 1528946984.530876, "value": 0, "prio_value": 9, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "pollution_air_mq9", "condition": {"interval": 10}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946984
+pollution_air_mq9
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/801f02ee61cf/evt/temperature_high/json', ...  (306 bytes)
+b'{"d": {"timestamp": 1528946984.545673, "value": 28.68, "prio_value": 4, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "temperature_high", "condition": {"threshold": {"operator": ">", "value": 28.0}}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946984
+temperature_high
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/801f02ee4e95/evt/temperature_high/json', ...  (306 bytes)
+b'{"d": {"timestamp": 1528946984.521164, "value": 28.68, "prio_value": 4, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "temperature_high", "condition": {"threshold": {"operator": ">", "value": 28.0}}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946984
+temperature_high
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/b827eb54155c/evt/gas/json', ...  (255 bytes)
+b'{"d": {"timestamp": 1528946984.658824, "value": 0, "prio_value": 9, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "gas", "condition": {"interval": 10}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946984
+gas
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/b827eb54155c/evt/pollution_air_tgs2600_ref/json', ...  (278 bytes)
+b'{"d": {"timestamp": 1528946984.820668, "value": 70, "prio_value": 9, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "pollution_air_tgs2600_ref", "condition": {"interval": 10}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946984
+pollution_air_tgs2600_ref
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/b827eb810ac5/evt/pollution_air_mq9/json', ...  (271 bytes)
+b'{"d": {"timestamp": 1528946984.857792, "value": 765, "prio_value": 9, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "pollution_air_mq9", "condition": {"interval": 10}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946984
+pollution_air_mq9
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/b827eb810ac5/evt/gas/json', ...  (256 bytes)
+b'{"d": {"timestamp": 1528946984.943504, "value": 27, "prio_value": 9, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "gas", "condition": {"interval": 10}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946984
+gas
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/74da380fa03f/evt/heartbeat/json', ...  (185 bytes)
+b'{"d": {"timestamp": 1528946985.057004, "value": "heartbeat", "geotag": {"lat": 33.643238, "alt": null, "lon": -117.841734}, "prio_value": 10, "prio_class": "low", "event": "heartbeat"}}'
+1528946985
+wrong msg format
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/801f02ee61cf/evt/light/json', ...  (259 bytes)
+b'{"d": {"timestamp": 1528946985.139537, "value": 139, "prio_value": 9, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "light", "condition": {"interval": 10}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946985
+light
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/b827eb810ac5/evt/pollution_air_mq135/json', ...  (272 bytes)
+b'{"d": {"timestamp": 1528946985.179278, "value": 44, "prio_value": 9, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "pollution_air_mq135", "condition": {"interval": 10}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946985
+pollution_air_mq135
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/b827eb54155c/evt/light_ref/json', ...  (263 bytes)
+b'{"d": {"timestamp": 1528946985.187159, "value": 636, "prio_value": 9, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "light_ref", "condition": {"interval": 10}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946985
+light_ref
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/000c2958a801/evt/hyx/json', ...  (267 bytes)
+b'{"d": {"timestamp": 1528946985.440024, "value": "heartbeat", "prio_value": 5, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "hyx", "condition": {"interval": 5}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946985
+hyx
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/000c2958a801/evt/condition/json', ...  (301 bytes)
+b'{"d": {"timestamp": 1528946985.831849, "value": "1:cloud,2:sunny,3:sunny,4:sunny,8:rain,", "prio_value": 10, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "condition", "condition": {"interval": 5}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946985
+condition
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/000c2958a801/evt/temperature/json', ...  (299 bytes)
+b'{"d": {"timestamp": 1528946985.83585, "value": 25.4, "prio_value": 5, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "temperature", "condition": {"threshold": {"operator": ">", "value": 24.0}}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946985
+temperature
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/000c2958a801/evt/temperature/json', ...  (422 bytes)
+b'{"d": {"timestamp": 1528946985.83585, "misc": {"touched_by_test_app": true}, "value": 26.4, "prio_value": 5, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "temperature", "condition": {"event": "SensedEvent (value=25.4, type=temperature, src=scale-local:/scale/sensors/DummyTempSensor, prio=5, time=1528946985.84)"}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946985
+temperature
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/801f02ee61cf/evt/temperature/json', ...  (302 bytes)
+b'{"d": {"timestamp": 1528946986.19334, "value": 23.44, "prio_value": 5, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "temperature", "condition": {"threshold": {"operator": ">", "value": -274.0}}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946986
+temperature
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/000c2958a801/evt/temperature/json', ...  (301 bytes)
+b'{"d": {"timestamp": 1528946986.833863, "value": 26.99, "prio_value": 5, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "temperature", "condition": {"threshold": {"operator": ">", "value": 24.0}}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946986
+temperature
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/000c2958a801/evt/temperature/json', ...  (425 bytes)
+b'{"d": {"timestamp": 1528946986.833863, "misc": {"touched_by_test_app": true}, "value": 27.99, "prio_value": 5, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "temperature", "condition": {"event": "SensedEvent (value=26.99, type=temperature, src=scale-local:/scale/sensors/DummyTempSensor, prio=5, time=1528946986.83)"}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946986
+temperature
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/000c2958a801/evt/temperature/json', ...  (301 bytes)
+b'{"d": {"timestamp": 1528946987.836058, "value": 26.78, "prio_value": 5, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "temperature", "condition": {"threshold": {"operator": ">", "value": 24.0}}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946987
+temperature
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/000c2958a801/evt/temperature/json', ...  (425 bytes)
+b'{"d": {"timestamp": 1528946987.836058, "misc": {"touched_by_test_app": true}, "value": 27.78, "prio_value": 5, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "temperature", "condition": {"event": "SensedEvent (value=26.78, type=temperature, src=scale-local:/scale/sensors/DummyTempSensor, prio=5, time=1528946987.84)"}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946987
+temperature
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/801f02ee4e95/evt/gas/json', ...  (256 bytes)
+b'{"d": {"timestamp": 1528946988.37766, "value": 380, "prio_value": 9, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "gas", "condition": {"interval": 10}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946988
+gas
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/b827eb810ac5/evt/geo_ip/json', ...  (341 bytes)
+b'{"d": {"timestamp": 1528946988.631304, "value": {"lat": 33.6403, "ip": "128.195.53.161", "lon": -117.7694, "exp": 1528947588.630669}, "prio_value": 9, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "geo_ip", "condition": {"interval": 60}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946988
+geo_ip
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/801f02ee4e95/evt/light/json', ...  (258 bytes)
+b'{"d": {"timestamp": 1528946988.821629, "value": 60, "prio_value": 9, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "light", "condition": {"interval": 10}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946988
+light
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/000c2958a801/evt/current_condition/json', ...  (284 bytes)
+b'{"d": {"timestamp": 1528946989.187354, "value": "Partly Cloudy", "prio_value": 10, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "current_condition", "condition": {"interval": 10}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946989
+current_condition
+wrong msg format
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/b827eb496e3c/evt/light/json', ...  (257 bytes)
+b'{"d": {"timestamp": 1528946989.222084, "value": 8, "prio_value": 9, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "light", "condition": {"interval": 10}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946989
+light
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/801f02ee61cf/evt/gas/json', ...  (257 bytes)
+b'{"d": {"timestamp": 1528946989.238769, "value": 120, "prio_value": 9, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "gas", "condition": {"interval": 10}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946989
+gas
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/b827eb54155c/evt/gas_ref/json', ...  (259 bytes)
+b'{"d": {"timestamp": 1528946989.28922, "value": 90, "prio_value": 9, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "gas_ref", "condition": {"interval": 10}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946989
+gas_ref
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/801f02ee4e95/evt/temperature/json', ...  (303 bytes)
+b'{"d": {"timestamp": 1528946989.340935, "value": 22.69, "prio_value": 5, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "temperature", "condition": {"threshold": {"operator": ">", "value": -274.0}}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946989
+temperature
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/001e4f480595/evt/heartbeat/json', ...  (272 bytes)
+b'{"d": {"timestamp": 1528946989.589272, "value": "heartbeat", "prio_value": 10, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "heartbeat", "condition": {"interval": 60}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946989
+heartbeat
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/b827eb54155c/evt/pollution_air_tgs2600/json', ...  (272 bytes)
+b'{"d": {"timestamp": 1528946989.91332, "value": 0, "prio_value": 9, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "pollution_air_tgs2600", "condition": {"interval": 10}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946989
+pollution_air_tgs2600
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/000c2958a801/evt/motion/json', ...  (257 bytes)
+b'{"d": {"timestamp": 1528946990.189112, "value": 1, "prio_value": 7, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "motion", "condition": {"interval": 1}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946990
+motion
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/801f02ee61cf/evt/unexpected_motion/json', ...  (291 bytes)
+b'{"d": {"timestamp": 1528946990.256213, "value": 1, "prio_value": 5, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "unexpected_motion", "condition": {"topic_subscriptions": ["motion"]}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946990
+unexpected_motion
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/801f02ee4e95/evt/unexpected_motion/json', ...  (291 bytes)
+b'{"d": {"timestamp": 1528946990.194823, "value": 1, "prio_value": 5, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "unexpected_motion", "condition": {"topic_subscriptions": ["motion"]}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946990
+unexpected_motion
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/b827eb54155c/evt/heartbeat/json', ...  (272 bytes)
+b'{"d": {"timestamp": 1528946990.374956, "value": "heartbeat", "prio_value": 10, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "heartbeat", "condition": {"interval": 60}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946990
+heartbeat
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/000c2958a801/evt/hyx/json', ...  (267 bytes)
+b'{"d": {"timestamp": 1528946990.440883, "value": "heartbeat", "prio_value": 5, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "hyx", "condition": {"interval": 5}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946990
+hyx
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/000c2958a801/evt/condition/json', ...  (301 bytes)
+b'{"d": {"timestamp": 1528946990.873186, "value": "1:cloud,2:sunny,3:sunny,4:sunny,8:rain,", "prio_value": 10, "prio_class": "low", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "condition", "condition": {"interval": 5}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946990
+condition
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/000c2958a801/evt/temperature/json', ...  (301 bytes)
+b'{"d": {"timestamp": 1528946991.190643, "value": 27.64, "prio_value": 5, "prio_class": "medium", "device": "mqtt://127.0.1.1:1883/scale/applications/MQTTEventSink", "event": "temperature", "condition": {"threshold": {"operator": ">", "value": 24.0}}, "schema": "www.schema.org/scale/2.0/sensed_event"}}'
+1528946991
+temperature
+Received PUBLISH (d0, q0, r0, m0, 'iot-1/d/000c2958a801/evt/temperature/json', ...  (425 bytes)
+

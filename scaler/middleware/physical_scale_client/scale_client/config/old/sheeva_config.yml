@@ -1,0 +1,17 @@
+# Note that this still needs a SigfoxEventSink added to it
+# Not officially tested!
+
+Main:
+    include_config_files: ["mqtt_config.yml"]
+
+Sensors:
+    HBSensor:
+      class: "dummy.heartbeat_sensor.HeartbeatSensor"
+      interval: 60
+    TempSensor:
+      class: "environment.usb_temperature_physical_sensor.UsbTemperaturePhysicalSensor"
+      device: "cel0"
+      threshold: 24.0
+    # Ensure the CSN client daemon is running and has been configured properly, including the /etc/hosts hack!
+    CSNSensor:
+      class: "community_seismic_network.csn_sensor.CsnSensor"
